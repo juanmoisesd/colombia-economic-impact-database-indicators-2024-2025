@@ -1,0 +1,35 @@
+{
+  "title": "Colombia Economic Impact Database Indicators 2024 2025",
+  "description": "Open research dataset: Colombia Economic Impact Database Indicators 2024 2025. By Juan Moisés de la Serna Tuya (UNIR).",
+  "creators": [
+    {
+      "name": "de la Serna Tuya, Juan Moisés",
+      "affiliation": "Universidad Internacional de La Rioja (UNIR)",
+      "orcid": "0000-0002-8401-8018"
+    }
+  ],
+  "keywords": [
+    "economics",
+    "database",
+    "open data",
+    "indicators",
+    "research",
+    "dataset"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "license": "cc-zero",
+  "upload_type": "dataset",
+  "communities": [
+    {
+      "identifier": "zenodo"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isIdenticalTo",
+      "identifier": "https://github.com/juanmoisesd/colombia-economic-impact-database-indicators-2024-2025",
+      "scheme": "url"
+    }
+  ]
+}
