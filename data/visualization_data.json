@@ -1,0 +1,15 @@
+{
+  "time_series": [
+    {"year": 2023, "gdp_growth": 0.6, "inflation": 9.28, "unemployment": 10.2, "exchange_rate": 3900, "public_debt": 52.0, "fiscal_deficit": 4.3},
+    {"year": 2024, "gdp_growth": 1.5, "inflation": 5.8, "unemployment": 10.5, "exchange_rate": 4100, "public_debt": 54.5, "fiscal_deficit": 5.6},
+    {"year": 2025, "gdp_growth": 2.6, "inflation": 3.5, "unemployment": 9.8, "exchange_rate": 4250, "public_debt": 56.2, "fiscal_deficit": 7.1}
+  ],
+  "labels": {
+    "gdp_growth": "Crecimiento PIB (%)",
+    "inflation": "Inflación (%)",
+    "unemployment": "Desempleo (%)",
+    "exchange_rate": "Tasa de Cambio (COP/USD)",
+    "public_debt": "Deuda Pública (% PIB)",
+    "fiscal_deficit": "Déficit Fiscal (% PIB)"
+  }
+}
