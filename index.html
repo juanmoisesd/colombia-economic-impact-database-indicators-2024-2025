@@ -1,1 +1,92 @@
-﻿<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Investigación Abierta</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;color:#333}.container{max-width:1200px;margin:0 auto;padding:40px}header{background:#fff;padding:40px;border-radius:10px;margin-bottom:40px}h1{color:#667eea;margin-bottom:10px}a{color:#667eea;display:inline-block;padding:10px 20px;margin:10px 10px 10px 0;background:#667eea;color:#fff;text-decoration:none;border-radius:5px}</style></head><body><div class="container"><header><h1>Base de Datos Abierta</h1><p>Investigación colaborativa - Juan Moisés de la Serna</p></header><div><a href="https://github.com/juanmoisesd">GitHub</a><a href="https://orcid.org/0000-0002-8401-8018">ORCID</a></div></div></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia Economic Impact 2024-2025 | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+    </style>
+</head>
+<body class="text-slate-800">
+    <nav class="bg-indigo-700 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Colombia Economic Dashboard</h1>
+            <div class="space-x-4">
+                <a href="https://github.com/juanmoisesd/colombia-economic-impact-database-indicators-2024-2025" class="hover:underline">GitHub</a>
+                <a href="https://doi.org/10.17632/s5jtdh2nnb.1" class="hover:underline">Dataset</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-6">
+        <header class="mb-10">
+            <h2 class="text-3xl font-bold text-indigo-900">Impacto Económico de Colombia 2024-2025</h2>
+            <p class="text-slate-600 mt-2">Visualización de indicadores clave y factores influyentes.</p>
+        </header>
+
+        <!-- Variable Selection -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="font-semibold text-slate-500 uppercase text-xs tracking-wider mb-2">Variables Individuales</h3>
+                <div class="grid grid-cols-2 gap-2">
+                    <button onclick="updateVariableChart('GDP Growth')" class="bg-slate-50 hover:bg-indigo-50 text-slate-700 px-3 py-2 rounded text-sm transition">PIB</button>
+                    <button onclick="updateVariableChart('Inflation')" class="bg-slate-50 hover:bg-indigo-50 text-slate-700 px-3 py-2 rounded text-sm transition">Inflación</button>
+                    <button onclick="updateVariableChart('Unemployment')" class="bg-slate-50 hover:bg-indigo-50 text-slate-700 px-3 py-2 rounded text-sm transition">Desempleo</button>
+                    <button onclick="updateVariableChart('Exchange Rate')" class="bg-slate-50 hover:bg-indigo-50 text-slate-700 px-3 py-2 rounded text-sm transition">Tasa Cambio</button>
+                </div>
+            </div>
+            <div class="md:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                <canvas id="variableChart" height="120"></canvas>
+            </div>
+        </section>
+
+        <!-- Insights & Questions -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold text-indigo-900 mb-6 underline decoration-indigo-300">Preguntas & Insights</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Question 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h4 class="font-semibold text-lg mb-4 text-indigo-700">¿Cómo afecta la inflación al desempleo? (Curva de Phillips)</h4>
+                    <canvas id="phillipsChart"></canvas>
+                    <p class="mt-4 text-sm text-slate-500 italic">Relación observada entre 2023 y 2025.</p>
+                </div>
+                <!-- Question 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h4 class="font-semibold text-lg mb-4 text-indigo-700">Evolución de la Deuda Pública vs Déficit Fiscal</h4>
+                    <canvas id="fiscalChart"></canvas>
+                    <p class="mt-4 text-sm text-slate-500 italic">Análisis de la sostenibilidad fiscal bajo las políticas actuales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sector Comparison -->
+        <section class="bg-indigo-900 text-white p-8 rounded-2xl shadow-2xl mb-12">
+            <h3 class="text-2xl font-bold mb-6">Comparativa de Factores Influyentes</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-indigo-300 mb-2">2.6%</div>
+                    <div class="text-sm uppercase tracking-widest opacity-75">Crecimiento PIB 2025</div>
+                </div>
+                <div class="text-center border-x border-indigo-800">
+                    <div class="text-4xl font-bold text-indigo-300 mb-2">~60%</div>
+                    <div class="text-sm uppercase tracking-widest opacity-75">Economía Informal</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-indigo-300 mb-2">7.1%</div>
+                    <div class="text-sm uppercase tracking-widest opacity-75">Déficit Fiscal (Máx)</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-100 p-8 mt-12 border-t border-slate-200 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Juan Moisés de la Serna | Open Research Project</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

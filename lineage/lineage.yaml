@@ -1,0 +1,12 @@
+lineage:
+  upstream:
+    - name: External Economic Reports (BBVA, DANE, etc.)
+      type: source
+  process:
+    - name: AI-assisted Extraction
+      tool: Perplexity.ai
+    - name: Data Harmonization
+      tool: Python
+  downstream:
+    - name: Clean CSV Dataset
+      type: artifact

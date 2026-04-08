@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+collecting ... collected 4 items
+
+tests/test_integrity.py::test_files_exist PASSED                         [ 25%]
+tests/test_integrity.py::test_data_dictionary_format PASSED              [ 50%]
+tests/test_schema.py::test_schema_validity PASSED                        [ 75%]
+tests/test_schema.py::test_schema_file_exists PASSED                     [100%]
+
+============================== 4 passed in 0.58s ===============================

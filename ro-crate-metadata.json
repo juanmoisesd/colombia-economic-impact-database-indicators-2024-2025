@@ -1,0 +1,33 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Base de Datos del Impacto Económico de Colombia 2024-2025: Indicadores Clave y Factores Influyentes",
+      "description": "Comprehensive economic dataset for Colombia (2024-2025).",
+      "datePublished": "2026-03-06",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "author": {
+        "@id": "https://orcid.org/0000-0002-8401-8018"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8401-8018",
+      "@type": "Person",
+      "name": "Juan Moisés de la Serna Tuya"
+    }
+  ]
+}

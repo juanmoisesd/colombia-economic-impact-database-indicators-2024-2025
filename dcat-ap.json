@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#"
+  },
+  "@type": "dcat:Dataset",
+  "dct:title": "Base de Datos del Impacto Económico de Colombia 2024-2025: Indicadores Clave y Factores Influyentes",
+  "dct:description": "Key economic indicators for Colombia 2024-2025.",
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dct:format": {
+        "@id": "http://publications.europa.eu/resource/authority/file-type/CSV"
+      },
+      "dcat:accessURL": {
+        "@id": "https://doi.org/10.17632/s5jtdh2nnb.1"
+      }
+    }
+  ]
+}

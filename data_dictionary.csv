@@ -1,0 +1,8 @@
+variable,description,type,unit,source
+gdp_growth,Annual GDP growth rate,numeric,percentage,BBVA Research
+inflation,Consumer Price Index change,numeric,percentage,Trading Economics
+unemployment,National unemployment rate,numeric,percentage,DANE
+oil_production,Oil production in barrels per day,numeric,bpd,Rystad Energy
+exchange_rate,Official exchange rate COP/USD,numeric,COP/USD,ExchangeRates
+poverty_rate,Household poverty rate,numeric,percentage,DANE
+public_debt,Gross public debt as percentage of GDP,numeric,percentage,MinHacienda

@@ -1,0 +1,39 @@
+{
+  "identifiers": [
+    {
+      "identifier": "10.17632/s5jtdh2nnb.1",
+      "identifierType": "DOI"
+    }
+  ],
+  "creators": [
+    {
+      "name": "De la Serna Tuya, Juan Moisés",
+      "nameType": "Personal",
+      "givenName": "Juan Moisés",
+      "familyName": "De la Serna Tuya",
+      "affiliation": [
+        {
+          "name": "Universidad Internacional de La Rioja (UNIR)"
+        }
+      ],
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "0000-0002-8401-8018",
+          "nameIdentifierScheme": "ORCID"
+        }
+      ]
+    }
+  ],
+  "titles": [
+    {
+      "title": "Base de Datos del Impacto Económico de Colombia 2024-2025: Indicadores Clave y Factores Influyentes"
+    }
+  ],
+  "publisher": "Mendeley Data",
+  "publicationYear": 2026,
+  "resourceType": {
+    "resourceType": "Dataset",
+    "resourceTypeGeneral": "Dataset"
+  },
+  "schemaVersion": "http://datacite.org/schema/kernel-4"
+}

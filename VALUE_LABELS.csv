@@ -1,0 +1,5 @@
+variable,label,description
+year,Año,The year of the data point
+indicator_name,Nombre del Indicador,The name of the economic indicator
+value,Valor,The numeric value of the indicator
+source,Fuente,The source of the data
