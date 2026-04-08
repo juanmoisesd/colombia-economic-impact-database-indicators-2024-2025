@@ -1,0 +1,11 @@
+rule all:
+    input:
+        "data/clean/indicators.csv"
+
+rule clean_data:
+    input:
+        "data/raw/indicators.csv"
+    output:
+        "data/clean/indicators.csv"
+    shell:
+        "python scripts/etl/clean_data.py {input} {output}"

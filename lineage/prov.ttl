@@ -1,0 +1,9 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ex: <http://example.org/> .
+
+ex:colombia_economic_data_v1 a prov:Entity ;
+    prov:wasGeneratedBy ex:data_collection_process ;
+    prov:wasAttributedTo ex:juan_moises_delaserna .
+
+ex:data_collection_process a prov:Activity ;
+    prov:used ex:external_sources .

@@ -1,0 +1,16 @@
+{
+  "@context": "http://www.w3.org/ns/prov#",
+  "@graph": [
+    {
+      "@id": "colombia_economic_data_v1",
+      "@type": "Entity",
+      "wasGeneratedBy": "data_collection_process",
+      "wasAttributedTo": "juan_moises_delaserna"
+    },
+    {
+      "@id": "data_collection_process",
+      "@type": "Activity",
+      "used": "external_sources"
+    }
+  ]
+}

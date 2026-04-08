@@ -1,0 +1,14 @@
+name: Sign Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Sign files
+      run: |
+        echo "Signing release artifacts..."

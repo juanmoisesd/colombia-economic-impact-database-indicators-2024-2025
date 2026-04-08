@@ -1,0 +1,7 @@
+{
+  "manifest_version": "1.0",
+  "files": [
+    {"path": "README.md", "type": "documentation"},
+    {"path": "data_dictionary.csv", "type": "data"}
+  ]
+}

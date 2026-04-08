@@ -1,0 +1,24 @@
+[
+  {
+    "type": "dataset",
+    "id": "delaserna2026_colombiaindicators",
+    "title": "Base de Datos del Impacto Económico de Colombia 2024-2025: Indicadores Clave y Factores Influyentes",
+    "author": [
+      {
+        "family": "De la Serna Tuya",
+        "given": "Juan Moisés"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "publisher": "Mendeley Data",
+    "version": "1",
+    "DOI": "10.17632/s5jtdh2nnb.1",
+    "URL": "https://doi.org/10.17632/s5jtdh2nnb.1"
+  }
+]

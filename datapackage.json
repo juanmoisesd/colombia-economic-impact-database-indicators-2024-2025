@@ -1,0 +1,35 @@
+{
+  "name": "colombia-economic-impact-2024-2025",
+  "title": "Base de Datos del Impacto Económico de Colombia 2024-2025: Indicadores Clave y Factores Influyentes",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "resources": [
+    {
+      "name": "colombia_economic_indicators",
+      "path": "data/clean/indicators.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Indicator",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ]
+}

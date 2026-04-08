@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Colombia Economic Impact Data",
+  "type": "object",
+  "properties": {
+    "indicator": {
+      "type": "string"
+    },
+    "value": {
+      "type": "number"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2023,
+      "maximum": 2025
+    }
+  },
+  "required": ["indicator", "value", "year"]
+}

@@ -1,0 +1,7 @@
+{
+  "root": "merkle-root-hash-placeholder",
+  "nodes": [
+    {"path": "README.md", "hash": "sha256-hash-placeholder"},
+    {"path": "data_dictionary.csv", "hash": "sha256-hash-placeholder"}
+  ]
+}
